@@ -47,7 +47,7 @@ class DeviceTypeDocumentSerializer(NetBoxModelSerializer):
     class Meta:
         model = DeviceTypeDocument
         fields = (
-            'id', 'url', 'display', 'name', 'document', 'document_type', 'filename', 'device', 'comments', 'tags', 'custom_fields', 'created',
+            'id', 'url', 'display', 'name', 'document', 'document_type', 'filename', 'devicetype', 'comments', 'tags', 'custom_fields', 'created',
             'last_updated',
         )
 
