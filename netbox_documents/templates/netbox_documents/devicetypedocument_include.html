@@ -24,10 +24,10 @@
                 <a href="{% url 'plugins:netbox_documents:devicetypedocument' pk=document.pk %}" class="btn btn-primary btn-sm lh-1" title="View Document">
                     <i class="mdi mdi-book" aria-hidden="true"></i>
                   </a>
-                  <a href="{% url 'plugins:netbox_documents:devicetypedocument_edit' pk=document.pk %}?return_url={% url 'dcim:device' pk=object.pk %}" class="btn btn-warning btn-sm lh-1" title="Edit Document">
+                  <a href="{% url 'plugins:netbox_documents:devicetypedocument_edit' pk=document.pk %}?return_url={% url 'dcim:devicetype' pk=object.pk %}" class="btn btn-warning btn-sm lh-1" title="Edit Document">
                     <i class="mdi mdi-pencil" aria-hidden="true"></i>
                   </a>
-                  <a href="{% url 'plugins:netbox_documents:devicetypedocument_delete' pk=document.pk %}?return_url={% url 'dcim:device' pk=object.pk %}" class="btn btn-danger btn-sm lh-1" title="Delete Document">
+                  <a href="{% url 'plugins:netbox_documents:devicetypedocument_delete' pk=document.pk %}?return_url={% url 'dcim:devicetype' pk=object.pk %}" class="btn btn-danger btn-sm lh-1" title="Delete Document">
                     <i class="mdi mdi-trash-can-outline" aria-hidden="true"></i>
                   </a>
               </td>
