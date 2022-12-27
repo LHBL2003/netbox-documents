@@ -200,6 +200,7 @@ class DeviceTypeDocument(NetBoxModel):
         to='dcim.DeviceType',
         on_delete=models.CASCADE,
         related_name='documents'
+        help_text='Dieses Feld ist es.'
     )
 
     comments = models.TextField(
