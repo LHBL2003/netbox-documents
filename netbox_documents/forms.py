@@ -50,7 +50,7 @@ class DeviceDocumentForm(NetBoxModelForm):
         model = DeviceDocument
         fields = ('name', 'document', 'document_type', 'device', 'comments', 'tags')
 
-class c(NetBoxModelFilterSetForm):
+class DeviceDocumentFilterForm(NetBoxModelFilterSetForm):
     model = DeviceDocument
 
     name = forms.CharField(
