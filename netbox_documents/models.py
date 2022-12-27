@@ -196,7 +196,7 @@ class DeviceTypeDocument(NetBoxModel):
         choices=DeviceDocTypeChoices
     )
 
-    devicet_ype = models.ForeignKey(
+    devicet_type = models.ForeignKey(
         to='dcim.DeviceType',
         on_delete=models.CASCADE,
         related_name='documents'
