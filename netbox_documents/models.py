@@ -191,6 +191,7 @@ class DeviceTypeDocument(NetBoxModel):
     document = models.FileField(
         upload_to=file_upload
     )
+    
     document_type = models.CharField(
         max_length=30,
         choices=DeviceDocTypeChoices
