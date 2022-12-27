@@ -57,7 +57,7 @@ class DeviceDocumentList(PluginTemplateExtension):
 
 #Hempel
 class DeviceTypeDocumentList(PluginTemplateExtension):
-    model = 'dcim.devicetype'
+    model = 'dcim.device-type'
 
     def left_page(self):
 
