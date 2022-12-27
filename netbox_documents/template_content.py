@@ -57,14 +57,14 @@ class DeviceDocumentList(PluginTemplateExtension):
 
 #Hempel
 class DeviceTypeDocumentList(PluginTemplateExtension):
-    model = 'dcim.devicetype1'
+    model = 'dcim.devicetype'
 
     def left_page(self):
 
         if plugin_settings.get('enable_device_type_documents') and plugin_settings.get('device_type_documents_location') == 'left':
 
             return self.render('netbox_documents/devicetypedocument_include.html', extra_context={
-                'device_type_documents': DeviceTypeDocument.objects.filter(devicetype=self.context['object']),
+                'device_type_documents': DeviceTypeDocument.objects.filter(devicetype2=self.context['object']),
             })
 
         else:
@@ -75,7 +75,7 @@ class DeviceTypeDocumentList(PluginTemplateExtension):
         if plugin_settings.get('enable_device_type_documents') and plugin_settings.get('device_type_documents_location') == 'right':
 
             return self.render('netbox_documents/devicetypedocument_include.html', extra_context={
-                'device_type_documents': DeviceTypeDocument.objects.filter(devicetype=self.context['object']),
+                'device_type_documents': DeviceTypeDocument.objects.filter(devicetype2=self.context['object']),
             })
 
         else:
