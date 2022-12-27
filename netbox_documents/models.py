@@ -196,11 +196,11 @@ class DeviceTypeDocument(NetBoxModel):
         choices=DeviceDocTypeChoices
     )
 
-    device_type = models.ForeignKey(
-        to='dcim.DeviceType',
-        on_delete=models.CASCADE,
-        related_name='documents'
-    )
+   # device_type = models.ForeignKey(
+   #     to='dcim.DeviceType',
+   #     on_delete=models.CASCADE,
+   #     related_name='documents'
+   # )
 
     comments = models.TextField(
         blank=True
