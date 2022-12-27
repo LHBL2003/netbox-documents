@@ -106,4 +106,4 @@ class CircuitDocumentList(PluginTemplateExtension):
         else:
             return ""
 
-template_extensions = [SiteDocumentList, DeviceDocumentList, CircuitDocumentList]
+template_extensions = [SiteDocumentList, DeviceDocumentList, DeviceTypeDocumentList, CircuitDocumentList]
