@@ -28,7 +28,7 @@ if plugin_settings.get('enable_navigation_menu'):
     if plugin_settings.get('enable_device_type_documents'):
         menu_items.append(
             PluginMenuItem(
-                link='plugins:netbox_documents:device_type_document_list',
+                link='plugins:netbox_documents:devicetypedocument_list',
                 link_text='Device Type Documents'
             )
         )
