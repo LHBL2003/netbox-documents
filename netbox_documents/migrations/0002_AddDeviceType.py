@@ -12,9 +12,9 @@ class Migration(migrations.Migration):
     initial = False
 
     dependencies = [
-        ('netbox_documents', '0072_created_datetimefield'),
+        ('netbox_documents', '0001_initial'),
         ('dcim', '0153_created_datetimefield'),
-        ('extras', '0001_initial'),
+        ('extras', '0072_created_datetimefield'),
     ]
 
     operations = [
