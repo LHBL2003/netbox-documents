@@ -199,7 +199,7 @@ class DeviceTypeDocument(NetBoxModel):
     device_type = models.ForeignKey(
         to='dcim.DeviceType',
         on_delete=models.CASCADE,
-        related_name='documents'
+        related_name='documents',
         help_text='Dieses Feld ist es.'
     )
 
