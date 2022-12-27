@@ -32,7 +32,7 @@ class DeviceDocTypeChoices(ChoiceSet):
 #Hempel
 class DeviceTypeDocTypeChoices(ChoiceSet):
 
-    key = 'DocTypeChoices.devicetype1'
+    key = 'DocTypeChoices.devicetype'
 
     CHOICES = [
         ('diagram', 'Network Diagram', 'green'),
