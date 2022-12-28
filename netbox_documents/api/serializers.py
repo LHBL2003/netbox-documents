@@ -42,7 +42,7 @@ class DeviceTypeDocumentSerializer(NetBoxModelSerializer):
         view_name='plugins-api:netbox_documents-api:devicetypedocument-detail'
     )
 
-    device_Type = NestedDeviceTypeSerializer()
+    device_type = NestedDeviceTypeSerializer()
 
     class Meta:
         model = DeviceTypeDocument
