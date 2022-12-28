@@ -61,7 +61,7 @@ class DeviceDocumentTable(NetBoxTable):
 
 #Hempel
 class DeviceTypeDocumentTable(NetBoxTable):
-    name = tables.TemplateColumn(template_code=DEVICE_DOCUMENT_LINK)
+    name = tables.TemplateColumn(template_code=DEVICE_TYPE_DOCUMENT_LINK)
     document_type = columns.ChoiceFieldColumn()
     device_type = tables.Column(
         linkify=True
