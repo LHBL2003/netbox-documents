@@ -49,7 +49,7 @@ PLUGINS_CONFIG = {
          # Location to inject the document widget in the device view (left/right
          'device_documents_location': 'left',
          # Location to inject the document type widget in the device type view (left/right
-         'device_documents_location': 'left',
+         'device_type_documents_location': 'left',
          # Location to inject the document widget in the device view (left/right
          'circuit_documents_location': 'left'
      }
