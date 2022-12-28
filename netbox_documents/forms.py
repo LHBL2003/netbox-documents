@@ -74,7 +74,7 @@ class DeviceDocumentFilterForm(NetBoxModelFilterSetForm):
 class DeviceTypeDocumentForm(NetBoxModelForm):
     comments = CommentField()
 
-    devicetype = DynamicModelChoiceField(
+    device_type = DynamicModelChoiceField(
         queryset=DeviceType.objects.all()
     )
 

@@ -63,7 +63,7 @@ class DeviceDocumentTable(NetBoxTable):
 class DeviceTypeDocumentTable(NetBoxTable):
     name = tables.TemplateColumn(template_code=DEVICE_DOCUMENT_LINK)
     document_type = columns.ChoiceFieldColumn()
-    devicetype = tables.Column(
+    device_type = tables.Column(
         linkify=True
     )
 
