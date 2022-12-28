@@ -1,6 +1,6 @@
 from extras.plugins import PluginTemplateExtension
 from django.conf import settings
-from .models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument #Hempel
+from .models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument 
 
 plugin_settings = settings.PLUGINS_CONFIG.get('netbox_documents', {})
 
@@ -55,7 +55,7 @@ class DeviceDocumentList(PluginTemplateExtension):
         else:
             return ""
 
-#Hempel
+
 class DeviceTypeDocumentList(PluginTemplateExtension):
     model = 'dcim.devicetype'
 

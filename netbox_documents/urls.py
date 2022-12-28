@@ -24,7 +24,7 @@ urlpatterns = (
         'model': models.DeviceDocument
     }),
 
-    #Hempel
+    
     # DeviceTypeDocument
     path('device-type-document/', views.DeviceTypeDocumentListView.as_view(), name='devicetypedocument_list'),
     path('device-type-document/add/', views.DeviceTypeDocumentEditView.as_view(), name='devicetypedocument_add'),

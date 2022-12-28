@@ -1,7 +1,7 @@
 from netbox.api.viewsets import NetBoxModelViewSet
 
 from .. import models
-from .serializers import SiteDocumentSerializer, DeviceDocumentSerializer, DeviceTypeDocumentSerializer, CircuitDocumentSerializer #Hempel
+from .serializers import SiteDocumentSerializer, DeviceDocumentSerializer, DeviceTypeDocumentSerializer, CircuitDocumentSerializer 
 
 class SiteDocumentViewSet(NetBoxModelViewSet):
     queryset = models.SiteDocument.objects.prefetch_related('tags')
@@ -11,7 +11,7 @@ class DeviceDocumentViewSet(NetBoxModelViewSet):
     queryset = models.DeviceDocument.objects.prefetch_related('tags')
     serializer_class = DeviceDocumentSerializer
 
-#Hempel
+
 class DeviceTypeDocumentViewSet(NetBoxModelViewSet):
     queryset = models.DeviceTypeDocument.objects.prefetch_related('tags')
     serializer_class = DeviceTypeDocumentSerializer

@@ -29,7 +29,7 @@ class DeviceDocTypeChoices(ChoiceSet):
         ('purchaseorder', 'Purchase Order', 'orange'),
     ]
 
-#Hempel
+
 class DeviceTypeDocTypeChoices(ChoiceSet):
 
     key = 'DocTypeChoices.devicetype'
@@ -180,7 +180,7 @@ class DeviceDocument(NetBoxModel):
     def get_absolute_url(self):
         return reverse('plugins:netbox_documents:devicedocument', args=[self.pk])
 
-#Hempel
+
 class DeviceTypeDocument(NetBoxModel):
     name = models.CharField(
         max_length=100,

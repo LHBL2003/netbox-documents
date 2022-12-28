@@ -1,6 +1,6 @@
 # Netbox Documents Plugin
 
-A plugin designed to faciliate the storage of site, circuit and device specific documents within [NetBox](https://github.com/netbox-community/netbox) 
+A plugin designed to faciliate the storage of site, circuit, device type and device specific documents within [NetBox](https://github.com/netbox-community/netbox) 
 
 **Note: Netbox v3.2+ is required. This plugin will not work on an earlier release of Netbox.**
 
@@ -40,14 +40,18 @@ PLUGINS_CONFIG = {
          'enable_circuit_documents': True,
          # Enable the management of device specific documents (True/False)
          'enable_device_documents': True,
-         # Enable the global menu options (True/False)
+         # Enable the management of device type specific documents (True/False)
+         'enable_device_type_documents': True,
+         # Enable the global menu options (True/False)   
          'enable_navigation_menu': True,
          # Location to inject the document widget in the site view (left/right)
          'site_documents_location': 'left',
          # Location to inject the document widget in the device view (left/right
-         'circuit_documents_location': 'left',
-         # Location to inject the document widget in the circuit view (left/right
-         'device_documents_location': 'left'
+         'device_documents_location': 'left',
+         # Location to inject the document type widget in the device type view (left/right
+         'device_documents_location': 'left',
+         # Location to inject the document widget in the device view (left/right
+         'circuit_documents_location': 'left'
      }
 }
 
@@ -62,6 +66,9 @@ FIELD_CHOICES = {
     ),
     'netbox_documents.DocTypeChoices.device+': (
         ('mydocument', 'My Custom Device Document Type', 'green'),
+    ),
+    'netbox_documents.DocTypeChoices.devicetype+': (
+        ('mydocument', 'My Custom Device Type Document Type', 'green'),
     ),
     'netbox_documents.DocTypeChoices.circuit+': (
         ('mydocument', 'My Custom Circuit Document Type', 'green'),
@@ -87,3 +94,5 @@ sudo systemctl restart netbox
 ![Add Circuit Document](docs/img/addcircuit.png)
 ![Site Document List](docs/img/sitedocuments.png)
 ![Device Document List](docs/img/devicedocuments.png)
+![Device Type Document](docs/img/devicetypedocuments.png)
+![Device Type Document List](docs/img/devicetypedocumentsList.png)

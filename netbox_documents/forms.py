@@ -1,9 +1,9 @@
 from django import forms
 from netbox.forms import NetBoxModelForm, NetBoxModelFilterSetForm
-from dcim.models import Site, Device, DeviceType #Hempel
+from dcim.models import Site, Device, DeviceType 
 from circuits.models import Circuit
 from utilities.forms import TagFilterField, CommentField, DynamicModelChoiceField
-from .models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument, CircuitDocTypeChoices, SiteDocTypeChoices, DeviceDocTypeChoices, DeviceTypeDocTypeChoices #Hempel
+from .models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument, CircuitDocTypeChoices, SiteDocTypeChoices, DeviceDocTypeChoices, DeviceTypeDocTypeChoices 
 
 
 #### Site Document Form & Filter Form
@@ -69,7 +69,7 @@ class DeviceDocumentFilterForm(NetBoxModelFilterSetForm):
 
     tag = TagFilterField(model)
 
-#Hempel
+
 #### Device Type Document Form & Filter Form
 class DeviceTypeDocumentForm(NetBoxModelForm):
     comments = CommentField()

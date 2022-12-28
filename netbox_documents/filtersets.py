@@ -1,5 +1,5 @@
 from netbox.filtersets import NetBoxModelFilterSet
-from .models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument #Hempel
+from .models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument 
 from django.db.models import Q
 
 class SiteDocumentFilterSet(NetBoxModelFilterSet):
@@ -30,7 +30,7 @@ class DeviceDocumentFilterSet(NetBoxModelFilterSet):
             Q(document__icontains=value)
         )
 
-#Hempel
+
 class DeviceTypeDocumentFilterSet(NetBoxModelFilterSet):
 
     class Meta:

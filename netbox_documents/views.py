@@ -36,7 +36,7 @@ class DeviceDocumentEditView(generic.ObjectEditView):
 class DeviceDocumentDeleteView(generic.ObjectDeleteView):
     queryset = models.DeviceDocument.objects.all()
 
-#Hempel
+
 ### DeviceTypeDocument
 class DeviceTypeDocumentView(generic.ObjectView):
     queryset = models.DeviceTypeDocument.objects.all()

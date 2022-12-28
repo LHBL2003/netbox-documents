@@ -23,7 +23,7 @@ if plugin_settings.get('enable_navigation_menu'):
             )
         )
 
-    #Hempel
+    
     # Add a menu item for Device Documents if enabled
     if plugin_settings.get('enable_device_type_documents'):
         menu_items.append(

@@ -1,7 +1,7 @@
 import django_tables2 as tables
 
 from netbox.tables import NetBoxTable, columns
-from .models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument #Hempel
+from .models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument 
 
 SITE_DOCUMENT_LINK = """
 <a href="{% url 'plugins:netbox_documents:sitedocument' pk=record.pk %}">
@@ -59,7 +59,7 @@ class DeviceDocumentTable(NetBoxTable):
         fields = ('pk', 'id', 'name', 'document_type',  'size', 'filename', 'device', 'comments', 'actions', 'created', 'last_updated', 'tags')
         default_columns = ('name', 'document_type', 'device', 'tags')
 
-#Hempel
+
 class DeviceTypeDocumentTable(NetBoxTable):
     name = tables.TemplateColumn(template_code=DEVICE_TYPE_DOCUMENT_LINK)
     document_type = columns.ChoiceFieldColumn()

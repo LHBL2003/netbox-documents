@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
 from netbox.api.serializers import NetBoxModelSerializer
-from ..models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument #Hempel
-from dcim.api.nested_serializers import NestedSiteSerializer, NestedDeviceSerializer, NestedDeviceTypeSerializer #Hempel
+from ..models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument 
+from dcim.api.nested_serializers import NestedSiteSerializer, NestedDeviceSerializer, NestedDeviceTypeSerializer 
 from circuits.api.nested_serializers import NestedCircuitSerializer
 
 class SiteDocumentSerializer(NetBoxModelSerializer):
@@ -35,7 +35,7 @@ class DeviceDocumentSerializer(NetBoxModelSerializer):
             'last_updated',
         )
 
-#Hempel
+
 class DeviceTypeDocumentSerializer(NetBoxModelSerializer):
 
     url = serializers.HyperlinkedIdentityField(
