@@ -127,7 +127,7 @@ class DeviceDocument(NetBoxModel):
     )
     document_type = models.CharField(
         max_length=30,
-        choices=DeviceDocTypeChoices
+        choices=DeviceTypeDocTypeChoices
     )
 
     device = models.ForeignKey(
@@ -144,7 +144,7 @@ class DeviceDocument(NetBoxModel):
         ordering = ('name',)
 
     def get_document_type_color(self):
-        return DeviceDocTypeChoices.colors.get(self.document_type)
+        return DeviceTypeDocTypeChoices.colors.get(self.document_type)
 
     @property
     def size(self):
