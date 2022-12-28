@@ -61,10 +61,10 @@ class DeviceTypeDocumentList(PluginTemplateExtension):
 
     def left_page(self):
 
-        if plugin_settings.get('enable_devicetype_documents') and plugin_settings.get('devicetype_documents_location') == 'left':
+        if plugin_settings.get('enable_device_type_documents') and plugin_settings.get('device_type_documents_location') == 'left':
 
             return self.render('netbox_documents/devicetypedocument_include.html', extra_context={
-                'devicetype_documents': DeviceTypeDocument.objects.filter(devicetype=self.context['object']),
+                'device_type_documents': DeviceTypeDocument.objects.filter(device_type=self.context['object']),
             })
 
         else:
@@ -72,10 +72,10 @@ class DeviceTypeDocumentList(PluginTemplateExtension):
 
     def right_page(self):
 
-        if plugin_settings.get('enable_devicetype_documents') and plugin_settings.get('devicetype_documents_location') == 'right':
+        if plugin_settings.get('enable_device_type_documents') and plugin_settings.get('device_type_documents_location') == 'right':
 
             return self.render('netbox_documents/devicetypedocument_include.html', extra_context={
-                'devicetype_documents': DeviceTypeDocument.objects.filter(devicetype=self.context['object']),
+                'device_type_documents': DeviceTypeDocument.objects.filter(device_type=self.context['object']),
             })
 
         else:

@@ -63,7 +63,7 @@ class DeviceDocumentTable(NetBoxTable):
 class DeviceTypeDocumentTable(NetBoxTable):
     name = tables.TemplateColumn(template_code=DEVICE_DOCUMENT_LINK)
     document_type = columns.ChoiceFieldColumn()
-    devicetype = tables.Column(
+    device_type = tables.Column(
         linkify=True
     )
 
@@ -73,8 +73,8 @@ class DeviceTypeDocumentTable(NetBoxTable):
 
     class Meta(NetBoxTable.Meta):
         model = DeviceTypeDocument
-        fields = ('pk', 'id', 'name', 'document_type',  'size', 'filename', 'devicetype', 'comments', 'actions', 'created', 'last_updated', 'tags')
-        default_columns = ('name', 'document_type', 'devicetype', 'tags')
+        fields = ('pk', 'id', 'name', 'document_type',  'size', 'filename', 'device_type', 'comments', 'actions', 'created', 'last_updated', 'tags')
+        default_columns = ('name', 'document_type', 'device_type', 'tags')
 
 class CircuitDocumentTable(NetBoxTable):
     name = tables.TemplateColumn(template_code=CIRCUIT_DOCUMENT_LINK)

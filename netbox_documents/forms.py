@@ -74,13 +74,13 @@ class DeviceDocumentFilterForm(NetBoxModelFilterSetForm):
 class DeviceTypeDocumentForm(NetBoxModelForm):
     comments = CommentField()
 
-    devicetype = DynamicModelChoiceField(
+    device_type = DynamicModelChoiceField(
         queryset=DeviceType.objects.all()
     )
 
     class Meta:
         model = DeviceTypeDocument
-        fields = ('name', 'document', 'document_type', 'devicetype', 'comments', 'tags')
+        fields = ('name', 'document', 'document_type', 'device_type', 'comments', 'tags')
 
 class DeviceTypeDocumentFilterForm(NetBoxModelFilterSetForm):
     model = DeviceTypeDocument
