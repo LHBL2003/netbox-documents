@@ -35,7 +35,7 @@ class DeviceTypeDocumentFilterSet(NetBoxModelFilterSet):
 
     class Meta:
         model = DeviceTypeDocument
-        fields = ('id', 'name', 'document_type', 'device_type')
+        fields = ('id', 'name', 'document_type', 'devicetype')
 
     def search(self, queryset, name, value):
         if not value.strip():

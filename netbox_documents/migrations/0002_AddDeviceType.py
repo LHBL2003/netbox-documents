@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
                 ('document', models.FileField(upload_to=netbox_documents.utils.file_upload)),
                 ('document_type', models.CharField(max_length=30)),
                 ('comments', models.TextField(blank=True)),
-                ('device_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='documents', to='dcim.devicetype')),
+                ('devicetype', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='documents', to='dcim.devicetype')),
                 ('tags', taggit.managers.TaggableManager(through='extras.TaggedItem', to='extras.Tag')),
             ],
             options={
