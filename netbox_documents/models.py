@@ -14,7 +14,7 @@ class SiteDocTypeChoices(ChoiceSet):
         ('diagram', 'Network Diagram', 'green'),
         ('floorplan', 'Floor Plan', 'purple'),
         ('wirelessmodel', 'Wireless Model (Ekahau)', 'yellow'),
-        ('quote', 'Quote', 'brown'),
+        ('quote', 'Quote', '#A52A2A'), # Brown
         ('purchaseorder', 'Purchase Order', 'orange'),
         ('other', 'Other', 'grey'),
     ]
@@ -26,9 +26,9 @@ class DeviceDocTypeChoices(ChoiceSet):
     CHOICES = [
         ('diagram', 'Network Diagram', 'green'),
         ('supportcontract', 'Support Contract', 'blue'),
-        ('quote', 'Quote', 'brown'),
+        ('quote', 'Quote', '#A52A2A'),
         ('purchaseorder', 'Purchase Order', 'orange'),
-        ('manual', 'Manual', 'brown'),
+        ('manual', 'Manual', 'brown'), # Brown
         ('other', 'Other', 'grey'),
     ]
 
@@ -40,9 +40,9 @@ class DeviceTypeDocTypeChoices(ChoiceSet):
     CHOICES = [
         ('diagram', 'Network Diagram', 'green'),
         ('supportcontract', 'Support Contract', 'blue'),
-        ('quote', 'Quote', 'brown'),
+        ('quote', 'Quote', '#A52A2A'),
         ('purchaseorder', 'Purchase Order', 'orange'),
-        ('manual', 'Manual', 'brown'),
+        ('manual', 'Manual', 'brown'), # Brown
         ('other', 'Other', 'grey'),
     ]
 
@@ -52,7 +52,7 @@ class CircuitDocTypeChoices(ChoiceSet):
 
     CHOICES = [
         ('diagram', 'Network Diagram', 'green'),
-        ('quote', 'Quote', 'brown'),
+        ('quote', 'Quote', '#A52A2A'), # Brown
         ('purchaseorder', 'Purchase Order', 'orange'),
         ('circuitcontract', 'Circuit Contract', 'red'),
         ('other', 'Other', 'grey'),
