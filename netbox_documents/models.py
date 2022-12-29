@@ -16,6 +16,7 @@ class SiteDocTypeChoices(ChoiceSet):
         ('wirelessmodel', 'Wireless Model (Ekahau)', 'yellow'),
         ('quote', 'Quote', 'brown'),
         ('purchaseorder', 'Purchase Order', 'orange'),
+        ('other', 'Other', 'grey'),
     ]
 
 class DeviceDocTypeChoices(ChoiceSet):
@@ -27,6 +28,8 @@ class DeviceDocTypeChoices(ChoiceSet):
         ('supportcontract', 'Support Contract', 'blue'),
         ('quote', 'Quote', 'brown'),
         ('purchaseorder', 'Purchase Order', 'orange'),
+        ('manual', 'Manual', 'brown'),
+        ('other', 'Other', 'grey'),
     ]
 
 
@@ -39,6 +42,8 @@ class DeviceTypeDocTypeChoices(ChoiceSet):
         ('supportcontract', 'Support Contract', 'blue'),
         ('quote', 'Quote', 'brown'),
         ('purchaseorder', 'Purchase Order', 'orange'),
+        ('manual', 'Manual', 'brown'),
+        ('other', 'Other', 'grey'),
     ]
 
 class CircuitDocTypeChoices(ChoiceSet):
@@ -50,6 +55,7 @@ class CircuitDocTypeChoices(ChoiceSet):
         ('quote', 'Quote', 'brown'),
         ('purchaseorder', 'Purchase Order', 'orange'),
         ('circuitcontract', 'Circuit Contract', 'red'),
+        ('other', 'Other', 'grey'),
     ]
 
 class SiteDocument(NetBoxModel):
